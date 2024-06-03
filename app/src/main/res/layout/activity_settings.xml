@@ -41,14 +41,14 @@
         android:textSize="@dimen/font_size_list"
         tools:ignore="RtlSymmetry,UseSwitchCompatOrMaterialXml" />
 
-    <RelativeLayout
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="@dimen/relative_high" >
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_alignParentStart="true"
+            android:layout_gravity="start"
             android:layout_marginStart="@dimen/margin_base"
             android:layout_marginTop="@dimen/relative_margin_start_top"
             android:text="@string/share"
@@ -58,22 +58,22 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
+            android:layout_gravity="end"
             android:layout_marginTop="@dimen/relative_margin_end_top"
             android:layout_marginEnd="@dimen/relative_margin_end"
             android:contentDescription="@string/share"
             android:src="@drawable/ic_share" />
 
-    </RelativeLayout>
+    </FrameLayout>
 
-    <RelativeLayout
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="@dimen/relative_high" >
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_alignParentStart="true"
+            android:layout_gravity="start"
             android:layout_marginStart="@dimen/margin_base"
             android:layout_marginTop="@dimen/relative_margin_start_top"
             android:text="@string/contact_support"
@@ -83,22 +83,22 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
+            android:layout_gravity="end"
             android:layout_marginTop="@dimen/relative_margin_end_top"
             android:layout_marginEnd="@dimen/relative_margin_end"
             android:contentDescription="@string/contact_support"
             android:src="@drawable/ic_contact_support" />
 
-    </RelativeLayout>
+    </FrameLayout>
 
-    <RelativeLayout
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="@dimen/relative_high" >
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_alignParentStart="true"
+            android:layout_gravity="start"
             android:layout_marginStart="@dimen/margin_base"
             android:layout_marginTop="@dimen/relative_margin_start_top"
             android:text="@string/licence_agreement"
@@ -108,12 +108,12 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
+            android:layout_gravity="end"
             android:layout_marginTop="@dimen/relative_margin_end_top"
             android:layout_marginEnd="@dimen/relative_margin_end"
             android:contentDescription="@string/licence_agreement"
             android:src="@drawable/ic_forward" />
 
-    </RelativeLayout>
+    </FrameLayout>
 
 </LinearLayout>
