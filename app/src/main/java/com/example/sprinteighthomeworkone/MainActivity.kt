@@ -5,12 +5,9 @@ import android.view.View
 import android.view.View.OnClickListener
 import android.widget.Button
 import android.widget.Toast
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 
-class MainActivity : AppCompatActivity(), View.OnClickListener {
+class MainActivity : AppCompatActivity(), OnClickListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -19,7 +16,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
         val searchButton = findViewById<Button>(R.id.search)
 
-        val searchButtonClickListener: View.OnClickListener = object : View.OnClickListener {
+        val searchButtonClickListener: OnClickListener = object : OnClickListener {
             override fun onClick(v: View?) {
                 Toast.makeText(
                     this@MainActivity,
